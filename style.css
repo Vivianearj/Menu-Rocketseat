@@ -29,6 +29,7 @@ body{
     background-repeat: no-repeat;   /*não repetir a imagem*/
     background-position: top center;
     background-size: cover;  /*formato da imagem de acordo com o tamanho do browser*/
+    height: 100vh;
 }
 
 body *{
@@ -150,4 +151,16 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+/*media queries*/
+@media (min-width: 700px) {  /*largura minima*/
+    :root{
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light{
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+
 }
